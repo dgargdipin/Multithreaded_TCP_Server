@@ -1,5 +1,6 @@
 # Assignment 1 -  Parallel TCP/IP Socket Server with client
 - **Dipin Garg**
+
 This is a TCP/IP server which can receive multiple client requests at the same time and entertain each client request in parallel so that no client will have to wait for server time. 
 
 TCP/IP server has been designed with multi-threading for parallel processing(in C++17), with each thread handling a new connection. Whenever a request comes to the server, the server’s main thread will create a thread and pass the client request to that thread with respective descriptors.
